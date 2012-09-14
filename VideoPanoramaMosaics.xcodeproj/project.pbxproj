@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		893389CA1602BD6E00197FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893389C91602BD6E00197FC4 /* Foundation.framework */; };
+		893389CD1602BD6E00197FC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 893389CC1602BD6E00197FC4 /* main.m */; };
+		893389D11602BD6E00197FC4 /* VideoPanoramaMosaics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		893389C31602BD6E00197FC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				893389D11602BD6E00197FC4 /* VideoPanoramaMosaics.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		893389C51602BD6E00197FC4 /* VideoPanoramaMosaics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VideoPanoramaMosaics; sourceTree = BUILT_PRODUCTS_DIR; };
+		893389C91602BD6E00197FC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		893389CC1602BD6E00197FC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		893389CF1602BD6E00197FC4 /* VideoPanoramaMosaics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoPanoramaMosaics-Prefix.pch"; sourceTree = "<group>"; };
+		893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VideoPanoramaMosaics.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		893389C21602BD6E00197FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893389CA1602BD6E00197FC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		893389BA1602BD6E00197FC4 = {
+			isa = PBXGroup;
+			children = (
+				893389CB1602BD6E00197FC4 /* VideoPanoramaMosaics */,
+				893389C81602BD6E00197FC4 /* Frameworks */,
+				893389C61602BD6E00197FC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		893389C61602BD6E00197FC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				893389C51602BD6E00197FC4 /* VideoPanoramaMosaics */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		893389C81602BD6E00197FC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				893389C91602BD6E00197FC4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		893389CB1602BD6E00197FC4 /* VideoPanoramaMosaics */ = {
+			isa = PBXGroup;
+			children = (
+				893389CC1602BD6E00197FC4 /* main.m */,
+				893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */,
+				893389CE1602BD6E00197FC4 /* Supporting Files */,
+			);
+			path = VideoPanoramaMosaics;
+			sourceTree = "<group>";
+		};
+		893389CE1602BD6E00197FC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				893389CF1602BD6E00197FC4 /* VideoPanoramaMosaics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		893389C41602BD6E00197FC4 /* VideoPanoramaMosaics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 893389D41602BD6E00197FC4 /* Build configuration list for PBXNativeTarget "VideoPanoramaMosaics" */;
+			buildPhases = (
+				893389C11602BD6E00197FC4 /* Sources */,
+				893389C21602BD6E00197FC4 /* Frameworks */,
+				893389C31602BD6E00197FC4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoPanoramaMosaics;
+			productName = VideoPanoramaMosaics;
+			productReference = 893389C51602BD6E00197FC4 /* VideoPanoramaMosaics */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		893389BC1602BD6E00197FC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = guanghui;
+			};
+			buildConfigurationList = 893389BF1602BD6E00197FC4 /* Build configuration list for PBXProject "VideoPanoramaMosaics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 893389BA1602BD6E00197FC4;
+			productRefGroup = 893389C61602BD6E00197FC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				893389C41602BD6E00197FC4 /* VideoPanoramaMosaics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		893389C11602BD6E00197FC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				893389CD1602BD6E00197FC4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		893389D21602BD6E00197FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		893389D31602BD6E00197FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		893389D51602BD6E00197FC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoPanoramaMosaics/VideoPanoramaMosaics-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		893389D61602BD6E00197FC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoPanoramaMosaics/VideoPanoramaMosaics-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		893389BF1602BD6E00197FC4 /* Build configuration list for PBXProject "VideoPanoramaMosaics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893389D21602BD6E00197FC4 /* Debug */,
+				893389D31602BD6E00197FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		893389D41602BD6E00197FC4 /* Build configuration list for PBXNativeTarget "VideoPanoramaMosaics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				893389D51602BD6E00197FC4 /* Debug */,
+				893389D61602BD6E00197FC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 893389BC1602BD6E00197FC4 /* Project object */;
+}
