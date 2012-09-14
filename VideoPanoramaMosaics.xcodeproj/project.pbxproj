@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		893389CA1602BD6E00197FC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893389C91602BD6E00197FC4 /* Foundation.framework */; };
-		893389CD1602BD6E00197FC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 893389CC1602BD6E00197FC4 /* main.m */; };
 		893389D11602BD6E00197FC4 /* VideoPanoramaMosaics.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */; };
+		893389D81602BDE300197FC4 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 893389D71602BDE300197FC4 /* main.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,9 +28,9 @@
 /* Begin PBXFileReference section */
 		893389C51602BD6E00197FC4 /* VideoPanoramaMosaics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VideoPanoramaMosaics; sourceTree = BUILT_PRODUCTS_DIR; };
 		893389C91602BD6E00197FC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		893389CC1602BD6E00197FC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		893389CF1602BD6E00197FC4 /* VideoPanoramaMosaics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoPanoramaMosaics-Prefix.pch"; sourceTree = "<group>"; };
 		893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = VideoPanoramaMosaics.1; sourceTree = "<group>"; };
+		893389D71602BDE300197FC4 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		893389CB1602BD6E00197FC4 /* VideoPanoramaMosaics */ = {
 			isa = PBXGroup;
 			children = (
-				893389CC1602BD6E00197FC4 /* main.m */,
+				893389D71602BDE300197FC4 /* main.mm */,
 				893389D01602BD6E00197FC4 /* VideoPanoramaMosaics.1 */,
 				893389CE1602BD6E00197FC4 /* Supporting Files */,
 			);
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				893389CD1602BD6E00197FC4 /* main.m in Sources */,
+				893389D81602BDE300197FC4 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,13 +163,22 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+				);
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -184,12 +193,21 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+				);
 				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -198,7 +216,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoPanoramaMosaics/VideoPanoramaMosaics-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -207,7 +233,15 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VideoPanoramaMosaics/VideoPanoramaMosaics-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
